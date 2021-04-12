@@ -489,6 +489,10 @@ font-weight: 300;
 /* resize: none; */
 border-radius: 4px;
 }
+
+.reg-btn{
+  margin-top: 3rem;
+}
 /* END OF REGISTRATION  SECTION */
 
 
@@ -560,4 +564,21 @@ border-radius: 4px;
     .data, .input-box select, .text-area{
       width: 100%;
     }
+
+ 
+
+    
+}
+
+@media only screen and (min-width: 768px) {
+
+  .training-card{
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .reg-btn{
+    margin-top: 9rem;
+  }
 }
