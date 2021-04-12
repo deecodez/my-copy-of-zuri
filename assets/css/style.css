@@ -3,12 +3,14 @@
 :root {
     --red_color: #E7332B;
     --footer_bg_color: #F9F9FB;
+    --fontfamily:'Averia Libre', cursive;
   } 
 
   /* END OF RESUABLE */
 
   body {
     background: #ffffff;
+    font-family: var(--fontfamily);
   }
   
   html {
@@ -87,7 +89,7 @@ nav {
   .nav_link_holder a {
     font-size: 16px;
     color: var(--text_color1);
-    font-family: var(--header_font);
+    font-family: var(--fontfamily);
     font-style: normal;
     font-weight: normal;
   }
@@ -198,8 +200,9 @@ nav {
 
   /* TRAINING SECTION */
   .training{
-      margin-top: 3rem;
-      margin-bottom: 5rem;
+      padding-top: 3rem;
+      padding-bottom: 5rem;
+      background: #FEF6F6;
   }
 
   .training h3{
@@ -217,25 +220,45 @@ nav {
     border: 1px solid #C7C4C4;
     border-radius: 4px;
     padding: 2rem 2rem;
+    height: 17rem;
+  }
+
+  .training-card .fe, .training-card .cl{
+    color: #6AB9BE;
+  }
+
+  .training-card .be{
+    color: #94BE6A;
+  }
+
+  .training-card .de, .training-card .me{
+    color: #AE6ABE;
+  }
+
+  .training-card .fr{
+    color: #E7D52F;
   }
 
   .training-card span{
-      color: #94BE6A;
+      text-transform: uppercase;
       font-size: 12px;
       padding-bottom: 1.3rem;
+      font-weight: 700;
+      font-style: normal;
   }
 
   .training-card h5{
       padding-top: 0.7rem;
+      font-size: 20px;
       color: #000000;
-      font-weight: 800;
-      font-size: 22px;
+      font-weight: 700;
   }
 
   .training-card p{
       color: #525252;
-      font-size: 16px;
+      font-size: 14px;
       text-align: justify;
+      font-weight: 700;
   }
 
   .training-enrol-btn{
@@ -244,7 +267,18 @@ nav {
       color: #ffffff;
       border: 1px solid var(--red_color);
       padding: 0.5rem 0.7rem;
+      transition: all 0.5s ease-in;
+
   }
+
+  .training-enrol-btn:hover{
+    background: #525252;
+    color: #ffffff;
+    border: 1px solid #525252;
+    transition: all 0.5s ease-in;
+  }
+
+
 
   /* END OF TRAINING SECTION */
 
@@ -256,18 +290,34 @@ nav {
   footer{
       background-color: var(--footer_bg_color);
       font-weight: normal;
-      font-size: 18px;
+      font-size: 14px;
       padding: 3rem 0;
+      font-family: var(--fontfamily);
+      color: #525252;
+      font-weight: 700;
   }
-  /* .footer-details{
-      display: flex;
-      justify-content: space-around;
-  } */
+  
+  .footer-logo h5{
+    padding-bottom: 2rem;
+  }
+
+  footer a {
+    color: #525252;
+    line-height: 2;
+  }
+
+  footer a:hover{
+    color: var(--red_color);
+  }
 
   .footer-links a i{
       color: #1B0403;
       margin-right: 1.5rem;
       font-size: 18px;
+  }
+
+  .footer-copyright{
+    margin-top: 3rem;
   }
 
   @media (max-width: 996px) {
