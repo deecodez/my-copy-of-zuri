@@ -530,7 +530,10 @@ border-radius: 4px;
 
 .text-area{
 width: 90%;
-height: 190%;
+/* height: 190%; */
+padding-bottom: 8.5rem;
+padding-top: 0.5rem;
+padding-left: 1rem;
 border:1px solid #ADADAD;
 /* padding:10px;*/
 /* padding: -10px 10px 10px 10px;  */
