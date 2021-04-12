@@ -570,10 +570,14 @@ border-radius: 4px;
     
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
   .training-card{
-    height: 25rem;
+    height: 23rem;
+  }
+
+  .training-card span{
+    font-size: 10px;
   }
 }
 
